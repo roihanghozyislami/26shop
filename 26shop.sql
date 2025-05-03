@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2025 at 03:03 PM
+-- Generation Time: May 03, 2025 at 09:19 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -202,7 +202,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('iKYitFjUkij06oPlr7kKqd583x37hUVg2o0uMFCt', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il9mbGFzaCI7YToyOntzOjM6Im5ldyI7YTowOnt9czozOiJvbGQiO2E6MDp7fX1zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozMjoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2xvZ2luLXBhZ2UiO31zOjY6Il90b2tlbiI7czo0MDoiZnkxY1FBUEluY3g2eUptR1RCMGJoQVpwWVlBb1VCNnJwd0ZPZWFjeCI7fQ==', 1746190812);
+('yKRtupK9hkZgqWdXLKjxNV4mhI5SrLeRXJHGNucC', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoidU9GRHpkZWtZNFNvNzRMdFVIcTMySUxyTTlSV3JhTWFMazB6MnpoQSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC91c2VyP3BhZ2U9MSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NzoiaWRfdXNlciI7aToyO3M6NDoibmFtYSI7czoyODoiTmFzeXdhIEF1cmVsbGlhIEVseXNpYSBQdXRyaSI7czoxMToibG9naW5fYWRtaW4iO2I6MTt9', 1746256722);
 
 -- --------------------------------------------------------
 
@@ -224,7 +224,28 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `nama`, `password`, `level`, `created_at`, `updated_at`) VALUES
-(2, 'Nasywa Aurellia Elysia Putri', '$2y$12$lPDzzgjO5oh8ZfcNIhCNSe8gAEM/PBt6odLoOkSZCI32iC4WmdUNy', 'admin', '2025-05-02 05:51:06', '2025-05-02 05:51:06');
+(2, 'Nasywa Aurellia Elysia Putri', '$2y$12$lPDzzgjO5oh8ZfcNIhCNSe8gAEM/PBt6odLoOkSZCI32iC4WmdUNy', 'Admin', '2025-05-02 05:51:06', '2025-05-02 23:58:46'),
+(3, 'Roihan Ghozy Islami', '$2y$12$lEOZAAC6E20Px.vh.iNl2ejjE6dwTeeMA29sQWVpxW1Wmp8kskPKG', 'Admin', '2025-05-02 21:50:37', '2025-05-02 21:50:37'),
+(5, 'User 1', '$2b$12$.cqOJpon34eLRy.MJFhQT.D/PkG/D03kbXTrOPWjEScnKxeFCT6ze', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(6, 'User 2', '$2b$12$rA9s0Hav4k/jm80ypLGmiO0jDM8Vz62Y5LXpm5sLtwUWyU5B.GTRG', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(7, 'User 3', '$2b$12$uTv1Yk5Odt9LpoMJUGzJROP3i.iAvl34m2lgTbYX0lY6FJ6y4LqzW', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(8, 'User 4', '$2b$12$hj2GOYkQxvNaaG7uhCf1yeqaybPTJGuJq05.7l.K0E6TikA9Cl9XK', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(9, 'User 5', '$2b$12$QJaV5FYh05GSUANaloAvZ.Q.anvK/s/xou8nxsfXdM8jGKqdIj2q.', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(10, 'User 6', '$2b$12$zQySxyrUp41l/5bH8BcxSOBpXQidHyTsY3PAZ.hyc8.cmkT3f4tny', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(11, 'User 7', '$2b$12$GQhNfS/kalrTs6yIn4BS1.PxkG3iEstekz.LDer1vZyiqWVcDCHgC', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(12, 'User 8', '$2b$12$Mq3OmAs5fZD16/rwGJ0OwuQyL7CQBpixkuJcRUSwIEO7vhylZphCm', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(13, 'User 9', '$2b$12$4UXxp/6oh2naTaYB4RHk/OdCwe0lKT3LSLMWRaa0yZonZtSPSp95e', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(14, 'User 10', '$2b$12$e4JKTp7AI5jsMZM8R6bA5.PpPVh3xnJpSyZbiJmqJIe8LlwcLBb8K', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(15, 'User 11', '$2b$12$WHdLhRQ0U6XUXjbJC0jVkOEuaohH2f2J7t8LFmhlwpRCE2gllVmoG', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(16, 'User 12', '$2b$12$5er3AD9lsBuN38NNOVUpoO0ofuTCGUjBBC/D0o6C0L4LYZxAZNCmW', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(17, 'User 13', '$2b$12$/.8lS2KZManmoZQlIxf8leeaenh961ovEu7LDMFnlJUsIpe5.NHcm', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(18, 'User 14', '$2b$12$tJ/57HtTF5gdGpy/jotwr.AGx30MOHq2Dtn3kXKC6Gm1c/JnybqT2', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(19, 'User 15', '$2b$12$RE.GeJsS0ZN.ThmD0vSI7OcliiifW4nzZ.4JAMMJK8O/B/fO9svQG', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(20, 'User 16', '$2b$12$ckKaaxve1SjWtD4HE9bCNu3gxR4cRZgjmBmv72BaCxet/dWqNOrDi', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(21, 'User 17', '$2b$12$dgGr8/3iEnrWcHnMYeqSMOfY1TTnk/7u6yJI3RtJfcX6IOTTjFBCS', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(22, 'User 18', '$2b$12$wbxxfASxDWlbyL4JdThkIuB8jQLRVmMi6XXRqiknaN12yDq27kB9e', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(23, 'User 19', '$2b$12$nr2XWEnr9LuNUxuq1S6MFOIO/T5hcxechXqG/Cy5VJ.S25w2uDEvO', 'Pembeli', '2025-05-03 07:15:18', '2025-05-03 07:15:18'),
+(24, 'User 20', '$2b$12$K.FmXwrc2iMKe8xatTK7GuRrO2d88qU5TRes8uM/Haig6kEx2WNiK', 'Admin', '2025-05-03 07:15:18', '2025-05-03 07:15:18');
 
 -- --------------------------------------------------------
 
@@ -375,7 +396,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -66,6 +66,7 @@ class logincontroller extends Controller
         DB::table('user')->insert([
             'nama'     => $request->nama,
             'password' => Hash::make($request->password),
+            'level' => 'pembeli',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
