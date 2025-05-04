@@ -94,6 +94,7 @@
                                 <button type="button" class="btn btn-sm btn-success ms-2" data-bs-toggle="modal" data-bs-target="#tambahUserModal">
                                   + Tambah User
                                 </button>
+                                <a href="{{ url('/user/export/pdf') }}" class="btn btn-sm btn-primary ms-2">Export PDF</a>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

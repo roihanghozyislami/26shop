@@ -31,7 +31,7 @@ class logincontroller extends Controller
 
         if ($user) {
             if ($user && Hash::check($request->password, $user->password)) {
-                if ($user->level === "admin") {
+                if ($user->level === "Admin") {
                     // Simpan data user ke session
                     $request->session()->put('id_user', $user->id_user);
                     $request->session()->put('nama', $user->nama);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class usercontroller extends Controller
 {
@@ -87,6 +88,16 @@ class usercontroller extends Controller
         DB::table('user')->where('id_user', $id)->delete();
 
         return redirect()->back()->with('berhasil', 'User berhasil dihapus.');
+    }
+
+    public function exportPdf()
+    {
+        $user = DB::table('user')->get();
+
+        $pdf = Pdf::loadView('pdf_user', compact('user'));
+
+        // Tampilkan di browser, bukan download
+        return $pdf->stream('data_user.pdf');
     }
 
 }

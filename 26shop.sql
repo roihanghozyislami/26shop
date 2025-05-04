@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2025 at 09:19 AM
+-- Generation Time: May 04, 2025 at 09:35 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -182,6 +182,21 @@ CREATE TABLE `produk` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `stok`, `harga`, `gambar`, `created_at`, `updated_at`) VALUES
+(1, 'Oli MPX2 Matic 800ML', 30, 55000.00, 'gambar_produk/CMRIAdVQrpr6gzhbO2RdI5oXfkdZkOpKCtfJnfVr.jpg', '2025-05-03 23:22:31', '2025-05-03 23:22:31'),
+(2, 'Oli Motul Scooter 800ML', 20, 90000.00, 'gambar_produk/Tqzv7HQld3drip2dueGoIGxTgKDWnyBS14mQgzRc.jpg', '2025-05-03 23:25:40', '2025-05-03 23:42:16'),
+(3, 'Vbelt TDR Vario 160/PCX/ADV', 5, 120000.00, 'gambar_produk/HI0C11YatuT41aT6DFqbaqlX4K1UcgbyHLqJ3k4x.jpg', '2025-05-03 23:26:32', '2025-05-03 23:26:32'),
+(4, 'Roller Racing CM Part Beat All Series/Vario All Series/PCX/ADV', 12, 65000.00, 'gambar_produk/8hxIRdpDlbO0VTdGtaGcuNAf6UcIWjLUdpEEnWS9.jpg', '2025-05-03 23:27:39', '2025-05-03 23:27:39'),
+(5, 'Slide Pice Honda Matic All', 40, 30000.00, 'gambar_produk/SaqvCZl14nJfyqcxcQ7zw2r9w8rUK5roOUWwnz10.jpg', '2025-05-03 23:28:10', '2025-05-03 23:28:10'),
+(6, 'Kampas Kopling Ganda All Honda Matic', 5, 230000.00, 'gambar_produk/uJVddRKktKJAxRpo5gqMKnshmUdvmWEsaLvxlQX6.jpg', '2025-05-03 23:28:48', '2025-05-03 23:28:48'),
+(7, 'Busi NGK CR7HSA All Honda Bebek Matic', 20, 15000.00, 'gambar_produk/UCdYM4xJHF5v0Nduw5xDZvY9kOPGBdpHor6x366z.jpg', '2025-05-03 23:29:51', '2025-05-03 23:29:51'),
+(9, 'Kampas Rem Belakang All Honda Bebek Matic', 25, 45000.00, 'gambar_produk/6VCaNMrkodJWlPJOyNWLvdrK5KaGyKcLTPPyGzRQ.jpg', '2025-05-03 23:30:57', '2025-05-03 23:30:57'),
+(10, 'Kampas Rem Depan Honda Bebek', 5, 20000.00, 'gambar_produk/zQreTOq3LndxaDOsaqgEsuqjjFQ0rXHAlQUJQiTh.jpg', '2025-05-03 23:46:19', '2025-05-03 23:46:19');
+
 -- --------------------------------------------------------
 
 --
@@ -202,7 +217,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('yKRtupK9hkZgqWdXLKjxNV4mhI5SrLeRXJHGNucC', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoidU9GRHpkZWtZNFNvNzRMdFVIcTMySUxyTTlSV3JhTWFMazB6MnpoQSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC91c2VyP3BhZ2U9MSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NzoiaWRfdXNlciI7aToyO3M6NDoibmFtYSI7czoyODoiTmFzeXdhIEF1cmVsbGlhIEVseXNpYSBQdXRyaSI7czoxMToibG9naW5fYWRtaW4iO2I6MTt9', 1746256722);
+('J7JtQiEBHkqoJWaJgkdX3QnS377Ikr6e9atDRyBd', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il9mbGFzaCI7YToyOntzOjM6Im5ldyI7YTowOnt9czozOiJvbGQiO2E6MDp7fX1zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozMjoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2xvZ2luLXBhZ2UiO31zOjY6Il90b2tlbiI7czo0MDoiMTNWT3RvN1hqcDhWc05wV3V1bFhMa1VXNGtJR1VORnJ6TEZKSDNYTiI7fQ==', 1746344115);
 
 -- --------------------------------------------------------
 
@@ -390,7 +405,7 @@ ALTER TABLE `order_item`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produk` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user`
